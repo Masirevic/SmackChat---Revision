@@ -34,6 +34,8 @@
 		88CE195D200514D200682DE7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE195B200514D200682DE7 /* ProfileVC.swift */; };
 		88CE195E200514D200682DE7 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CE195C200514D200682DE7 /* ProfileVC.xib */; };
 		88D159632009066500E898D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D159622009066500E898D7 /* Message.swift */; };
+		88D159652009394300E898D7 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D159642009394300E898D7 /* KeyboardBoundView.swift */; };
+		88D15967200941F500E898D7 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D15966200941F500E898D7 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		88CE195B200514D200682DE7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		88CE195C200514D200682DE7 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		88D159622009066500E898D7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		88D159642009394300E898D7 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		88D15966200941F500E898D7 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BE9E8175F1BBA9D975597A8A /* Pods-SmackChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackChat/Pods-SmackChat.debug.xcconfig"; sourceTree = "<group>"; };
 		C67316240D99B2E2B64938B9 /* Pods-SmackChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackChat/Pods-SmackChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,10 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				8801321820017F2400A0590A /* GradientView.swift */,
+				88D159642009394300E898D7 /* KeyboardBoundView.swift */,
 				88A6C843200293F0007638A5 /* RoundedButton.swift */,
 				88A6C8492003AB46007638A5 /* AvatarCell.swift */,
 				882859212004DA93008919E4 /* CircleImage.swift */,
 				880F3D6120075216005719F7 /* ChannelCell.swift */,
+				88D15966200941F500E898D7 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,11 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D159652009394300E898D7 /* KeyboardBoundView.swift in Sources */,
 				880F3D7020076C51005719F7 /* SocketService.swift in Sources */,
 				88CE195D200514D200682DE7 /* ProfileVC.swift in Sources */,
 				880F3D6220075216005719F7 /* ChannelCell.swift in Sources */,
 				8801321720017C3C00A0590A /* ChannelVC.swift in Sources */,
 				88A6C8482003A8E2007638A5 /* AvatarPickerVC.swift in Sources */,
+				88D15967200941F500E898D7 /* MessageCell.swift in Sources */,
 				88A6C844200293F0007638A5 /* RoundedButton.swift in Sources */,
 				88D159632009066500E898D7 /* Message.swift in Sources */,
 				880F3D6020074D4B005719F7 /* Channel.swift in Sources */,
