@@ -9,16 +9,18 @@
 import UIKit
 
 class MessageCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBOutlet weak var userImg: CircleImage!
+    @IBOutlet weak var messageBodyLbl: UILabel!
+    @IBOutlet weak var userNameLbl: UILabel!
+    @IBOutlet weak var timeStampLbl: UILabel!
+    
+    
+    func configureCell(message: Message) {
+        messageBodyLbl.text = message.message
+        userNameLbl.text = message.userName
+        userImg.image = UIImage(named: message.userAvatar)
+        userImg.backgroundColor = UserDataService.instance.returnUIColor(components: message.userAvatarColor)
     }
 
 }
